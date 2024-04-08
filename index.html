@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main-image-container">
+      <div>
+        <div class="title-container">
+          <h1>ToDo List</h1>
+          <div class="filter-container">
+            <img id="filter-icon" src="images/filter.png" alt="" />
+            <div id="filter-box" class="filter-box display-none">
+              <input type="radio" id="option1" name="option" value="All" />
+              <label for="option1">All</label><br />
+              <input
+                type="radio"
+                id="option2"
+                name="option"
+                value="Completed"
+              />
+              <label for="option2">Completed</label><br />
+              <input type="radio" id="option3" name="option" value="Active" />
+              <label for="option3">Active</label><br />
+            </div>
+          </div>
+        </div>
+        <div id="todo-container">
+          <div class="add-box">
+            <input id="add-todo-input" type="text" /><button id="add-todo-btn">
+              Add
+            </button>
+          </div>
+
+          <div class="todo-list-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
